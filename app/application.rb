@@ -14,7 +14,7 @@ class Application
       if item.nil?
         resp.write "Item Not Found"
         resp.status 400
+      else
         
-      else 
         
         
