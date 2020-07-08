@@ -13,3 +13,6 @@ class Application
         
       if item.nil?
         resp.write "Error Found"
+        resp.status 400
+        
+        
