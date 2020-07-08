@@ -7,4 +7,5 @@ class Application
       resp = Rack::Response.new
       req = Rack::Request.new(env)
       
-      if reg.path.match("/items/")
+      if reg.path.match(/items/)
+        
