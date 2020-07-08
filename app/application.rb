@@ -18,7 +18,7 @@ class Application
         resp.write item.price 
       end
       
-    else resp.write "Error Found"
+    else resp.write "Route not Found"
       resp.status = 404 
     end
     
