@@ -8,4 +8,4 @@ class Application
       req = Rack::Request.new(env)
       
       if reg.path.match(/items/)
-        
+        item_name = 
