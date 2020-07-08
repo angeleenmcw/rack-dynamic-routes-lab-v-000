@@ -11,7 +11,7 @@ class Application
         item_name = req.path.split("/items/").last 
         item = @@items.detect{|i| i.name = item_name}
         
-      if item.nil
+      if item i = nil
         resp.write "Item Not Found"
         resp.status = 400
       else
