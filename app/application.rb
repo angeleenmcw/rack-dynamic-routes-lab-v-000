@@ -2,8 +2,9 @@ class Application
   
   def call(env)
     
-    resp = Rack.response.new 
-    rep = Rack.
+    resp = Rack::Response.new 
+    rep = Rack::Request.new(env)
+    
     if req.path=="/items"
       resp.write "#{price}"
     else
