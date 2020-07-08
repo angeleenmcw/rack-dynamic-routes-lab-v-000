@@ -12,7 +12,9 @@ class Application
         item = @@items.find{|i| i.name = item_name}
         
       if item.nil?
-        resp.write "Error Found"
+        resp.write "Item Not Found"
         resp.status 400
+        
+      else 
         
         
