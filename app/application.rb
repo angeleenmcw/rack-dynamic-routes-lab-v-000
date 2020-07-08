@@ -7,5 +7,5 @@ class Application
       resp = Rack::Response.new
       req = Rack::Request.new(env)
       
-      if reg.path.match(/items/)
-        item_name = 
+      if req.path.match(/items/)
+        item_name = req.path.split("/items/").last
