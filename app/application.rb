@@ -18,6 +18,10 @@ class Application
         resp.write item.price 
       end
       
-    else 
+    else resp.write "Error Found"
+      resp.status 404 
+    end
+  end
+end
         
         
